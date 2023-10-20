@@ -7,7 +7,7 @@ const { Server } = require('socket.io');
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost:4321", "https://quadi48889.ac-page.com/testingsocket"],
+        origin: ["http://localhost:4321", "https://quadi48889.ac-page.com"],
         methods: ["GET", "POST"]
     }
 }); // Asocia socket.io con el servidor
